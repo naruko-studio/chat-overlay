@@ -3,7 +3,7 @@ const props = defineProps<{
   year: number
   name: string
   url: string
-  long: boolean
+  long?: boolean
 }>()
 const current = new Date().getFullYear()
 const years = computed(() =>
